@@ -1,0 +1,11 @@
+@mixin link--hover() {
+    background-color: $orange;
+    color: $white--off;
+    font-weight: bold;
+}
+
+@mixin resize--fullscreen() {
+    float: none;
+    position: relative;
+    width: 100%;
+}

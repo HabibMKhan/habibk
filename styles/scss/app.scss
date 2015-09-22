@@ -1,0 +1,45 @@
+/*
+*  app.scss
+*/
+
+/*
+**  main.scss ==> main.css
+**
+**  TABLE OF CONTENTS
+**  
+**  I. HEADER
+**      a) Logo
+**          - animate
+**          - my face
+**      b) Navigation
+**          - transition
+**      
+**  II. BODY
+**      a) Main-content
+**          - color-scheme
+**      b) Sub-content Left
+**          - Overview: Introduction, Overview, Social Links, Photos
+**      c) Sub-content Right
+**          - Button column of clickable related links, contact form
+**
+**  III. FOOTER
+**      a) Copyright
+**          - (C) Habib Khan 2015
+**      b) MailTo
+**          - Reconsider communication method
+**      c) Social Links
+**          - Consider safe social links (LinkedIn)
+**
+**  Notes: 
+**      - Consider mobile experience
+*/
+
+
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'layout';
+
+@import 'about';
+
+@import 'mobile';

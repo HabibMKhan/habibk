@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-US" ng-app="habibkApp">
+
+	<head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/css/app.css">
+        <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body ng-controller='aboutController'>
+
+        <div id="header">
+    		<div class="logo">
+    			<a class="logo-text" href="#/about" title="Welcome Home!">HK</a>
+    		</div>
+    		<div class="nav">
+        		<ul class="nav__content">
+        			<li class="nav__content__item">
+                        <a class="nav__content__link" href="#/about" title="About">
+                            About
+                        </a>
+                    </li>
+        			<li class="nav__content__item">
+                        <a class="nav__content__link" href="#/interests" title="Interests">
+                            Interests
+                        </a>
+                    </li>
+                    <li class="nav__content__item">
+                        <a class="nav__content__link" href="#/blog" title="Blog">
+                            Blog
+                        </a>
+                    </li>
+        			<li class="nav__content__item">
+                        <a class="nav__content__link" href="#/contact" title="Contact">
+                            Contact
+                        </a>
+                    </li>
+        		</ul>
+            </div>
+        </div>
+
+
+        <div id="body">
+            <div class="content" ng-view></div>
+        </div>
+
+        <div id="footer">
+            <ul class="social-list">
+                <li class="social-list__link fb">
+                    <a class="social-list__link__hyper fb" href="https://www.facebook.com/habibmkhan92" title="Habib's Facebook">
+                        FACEBOOK
+                    </a>
+                </li>
+                <li class="social-list__link gh">
+                    <a class="social-list__link__hyper gh" href="https://github.com/HabibMKhan" title="Habib's GitHub">
+                        GITHUB
+                    </a>
+                </li>
+                <li class="social-list__link li">
+                    <a class="social-list__link__hyper li" href="https://linkedin.com/in/habibk" title="Habib's LinkedIn">
+                        LINKEDIN
+                    </a>
+                </li>
+                <li class="social-list__link tw">
+                    <a class="social-list__link__hyper tw" href="https://twitter.com/HabibMKhan92" title="Habib's Twitter">
+                        TWITTER
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+	<script type="text/javascript" src="magic.js"></script>
+
+	</body>
+</html>

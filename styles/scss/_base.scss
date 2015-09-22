@@ -1,0 +1,20 @@
+/*
+*  _base.scss
+*/
+
+
+/******************************\
+            RESET              
+\******************************/
+
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: $font-size;
+    color: magenta, purple;
+    background-color: $page--bg-color;
+    font-family: 'Dosis', sans-serif;
+}

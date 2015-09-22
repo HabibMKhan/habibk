@@ -1,0 +1,31 @@
+<!-- home.html -->
+
+<div class="body__header">
+	<h1 class="body__header__label">{{header}}</h1>
+</div>
+
+<div class="body__content">
+    <div class="body__content__left">
+        <p class="body__content__left__text">
+            {{overview}}
+            <img class="profile-photo" ng-show="page=='about'" 
+                 src="img/Profile_Photo_Bangladesh_Small.jpeg"></img>
+        </p>
+    </div>
+
+    <div class="body__content__right">
+        <div class="details">
+            <p class="details__overview">
+                {{details}}
+            </p>
+            <ul class="details__list">
+                <li class="details__list__item" 
+                    data-ng-repeat="(detail, url) in detailsList">
+                    <a class="details__list__item__link link" 
+                       title="{{detail}}" href="{{url}}">
+                        {{detail}}
+                    </a>
+                </li>
+            </ul>
+    </div>
+</div>

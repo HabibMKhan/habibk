@@ -1,0 +1,79 @@
+/*
+*  _variables.scss
+*/
+
+/******************************\
+            LAYOUT              
+\******************************/
+
+$white: #f4f4f4; /*this is what I used to use for $white-off*/
+$white--off: #f6f6f6;
+
+$tap-target: 40px;
+$content-height: 450px;
+$page-width: 96%;
+$page--bg-color: $white--off;
+
+/******************************\
+            COLORS              
+\******************************/
+
+
+
+$bangladesh-green: #01796F;
+$bangladesh-red: #E11837;
+
+$green: #3cb878;
+$light-green: #94ff94;
+$medium-green: #82ca9c;
+$magenta: #ec008c;
+
+$black: #000;
+
+$green: #22C300;
+$green--light: #47EE24;
+$green--dark : #1CA100;
+
+$green: #378A20;
+$green--light: #9AC942;
+$green--dark : #12380D;
+
+
+$cyan: #00C8AD;
+$cyan--light: #21D9C0;
+$cyan--dark : #00937F;
+
+
+$blue: #336699; /*or 99 -> CC*/
+$blue--light: #4A7AA7;
+$blue--dark : #1A4672;
+
+$orange: #FF6A00;
+$orange--light: #FF8127;
+$orange--dark : #EA6100;
+
+$red: #E20016;
+$red--light: #FA0018;
+$red--dark : #BB0012;
+
+
+/******************************\
+            TYPOGRAPHY              
+\******************************/
+
+$dosis-font: 'Dosis', arial, helvetica, sans-serif;
+$myriad-font: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$font-size: 20px;
+$font-size--large: 26px;
+$font-size--small: 14px;
+
+
+/******************************\
+            SOCIAL              
+\******************************/
+
+$facebook-color: #3b5998;
+$github-color--gray: #333333;
+$github-color--blue: #4183c4;
+$linkedin-color: #007bb6;
+$twitter-color: #00aced;

@@ -1,0 +1,306 @@
+/*
+*  _layout.scss
+*/
+
+/*
+**  TABLE OF CONTENTS
+**  
+**  I. HEADER
+**      a) Logo
+**          - animate
+**          - my face
+**      b) Navigation
+**          - transition
+**      
+**  II. BODY
+**      a) Main-content
+**          - color-scheme
+**      b) Sub-content Left
+**          - Overview: Introduction, Overview, Social Links, Photos
+**      c) Sub-content Right
+**          - Button column of clickable related links, contact form
+**
+**  III. FOOTER
+**      a) Copyright
+**          - (C) Habib Khan 2015
+**      b) MailTo
+**          - Reconsider communication method
+**      c) Social Links
+**          - Consider safe social links (LinkedIn)
+*/
+
+
+/******************************\
+            LAYOUT VARS              
+\******************************/
+$logo__background--bg-color: $blue--light;
+$nav__content--bg-color: $blue--light;
+$nav__content__link--bg-color--hover: $orange;
+$nav__content__link--color: $black;
+$nav__content__link--color--hover: $white--off;
+
+$body__header__bg-color: $white--off; 
+$body__header__label--color: $orange; 
+$content--bg-color: $blue--light;
+$body__content--bg-color: $white--off;
+$body__content--color: $orange;
+
+$logo-text--color: $green;
+$logo__background--color: $green;
+
+
+/******************************\
+            HEADER              
+\******************************/
+
+
+#header {
+    font-family: $dosis-font;
+    width: $page-width;
+    height: $tap-target;
+    margin: 10px 10px 0 10px;
+}
+
+/**
+* Logo
+*/
+
+.logo {
+    float: left;
+    
+    height: $tap-target;
+    width: $tap-target;
+    line-height: $tap-target;
+    
+    display: inline-block;
+    padding: 0 3px;
+    
+    background-color: $logo__background--bg-color;
+    font-family: $myriad-font;
+    /*padding: 5px;*/
+}
+
+.logo:hover {
+    background-color: $nav__content__link--bg-color--hover;
+}
+
+.logo-text {
+    margin-left: -2px;
+
+    font-size: 36px;
+    color: $black;
+    font-weight: normal;
+    text-decoration: none;
+    top: 4px;
+    position: relative;
+}
+
+.logo:hover .logo-text{
+    color: $nav__content__link--color--hover;
+    text-decoration: none;
+}
+/**
+* Navigation
+*/
+
+.nav {
+    float: right;
+    display: inline-block;
+    width: 85%;
+}
+
+.nav__content {
+    line-height: $tap-target;
+    width: 100%;
+    list-style: none;
+    color: $black;
+    background-color: $nav__content--bg-color;
+
+}
+
+.nav__content__item {
+    height: 100%;
+    display: inline-block;
+    width: 24.5%; /* this is used against trailing pixel-width in nav*/
+}
+.nav__content__link {
+    display: block;
+    height: 100%;
+    color: $nav__content__link--color;
+    text-align: center;
+}
+
+.nav__content__link:visited {
+    color: $nav__content__link--color;
+}
+
+.nav__content__link:hover {
+    @include link--hover();
+}
+
+
+/******************************\
+            BODY              
+\******************************/
+
+#body {
+    height: 100%;
+    margin: 0;
+    width: $page-width;
+}
+
+.content {
+    float: left;
+    background-color: $content--bg-color;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+.body__header {
+    height: $tap-target;
+    line-height: $tap-target;
+    margin: 0 15px;
+    padding: 0 15px;
+    background-color: $body__header__bg-color;
+}
+
+.body__header__label {
+    font-size: $font-size--large;        
+    margin-bottom: 15px;
+    color: $body__header__label--color;
+    letter-spacing: 1px;
+}
+
+.body__content {
+    font-size: $font-size;
+    color: $body__content--color;
+    margin: 10px 15px;
+    padding-bottom: 15px;
+}
+
+.body__content__left {
+    float: left;
+    background-color: $body__content--bg-color;
+    width: 42%;
+    height: $content-height;   
+    margin-bottom: 15px;
+}
+
+.body__content__right {
+    float: right;
+    background-color: $body__content--bg-color;
+    width: 57%;
+    height: $content-height;
+    margin-bottom: 15px;
+}
+
+.body__content__left__text,
+.details,
+.details__list {
+    padding: 10px 25px;
+}
+
+.body__content__left__text {
+    
+    text-align: center;
+
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.details__list {
+    list-style: none;
+    position: relative;
+}
+.details__list__item {
+
+    display: block;
+    text-align: center;
+    
+    margin-bottom: 15px;
+    background-color: $cyan--light;
+    color: $white--off;
+
+    height: $tap-target;
+    
+}
+.details__list__item:hover {
+    @include link--hover();
+}
+
+.details__list__item__link {
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top: 6px;
+}
+
+.details__list__item__link:visited {
+    color: $white--off;
+}
+
+/******************************\
+            FOOTER              
+\******************************/
+
+#footer {
+    width: $page-width;
+    float: left;
+}
+
+.social-list {
+    height: $tap-target;
+    background-color: $twitter-color;
+    width: 100%;
+    margin: 10px 15px;
+}
+
+.social-list__link {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    margin-left: -5px;
+    list-style: none;
+    color: white;
+
+
+    vertical-align: middle;
+    text-align: center;
+    font-size: $font-size--small;
+
+    &:hover {
+        
+    }
+}
+
+.social-list__link__hyper {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    font-size: $font-size--small;
+
+
+}
+
+.social-list__link.fb {
+    background-color: $facebook-color;
+}
+
+.social-list__link.gh {
+    background-color: $github-color--gray;
+}
+
+.social-list__link.li {
+    background-color: $linkedin-color;
+}
+
+.social-list__link.tw {
+    background-color: $twitter-color;
+}
+
